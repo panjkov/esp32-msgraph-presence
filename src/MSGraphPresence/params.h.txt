@@ -1,0 +1,6 @@
+const char *ssid = "<WiFi AP SSID GOES HERE>";
+const char *pass = "<WIFI AP PASSWORD GOES HERE>";
+
+String tenantId = "<AZURE AD TENANT ID GOES HERE>";
+String clientId = "<AZURE AD APP CLIENT ID GOES HERE>"; 
+String userId = "<MICROSOFT GRAPH USER ID GOES HERE>";
