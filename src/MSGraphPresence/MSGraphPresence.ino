@@ -17,7 +17,7 @@ const int pwmResolution = 8;
 
 String scopes = "Presence.Read Presence.Read.All openid profile offline_access"; //Presence.Read Presence.Read.All openid profile offline_access
 
-String presenceUrl = "https://graph.microsoft.com/beta/users/" + userId + "/presence";
+String presenceUrl = "https://graph.microsoft.com/v1.0/users/" + userId + "/presence";
 String tokenUrl = "https://login.microsoftonline.com/" + tenantId + "/oauth2/v2.0/token";
 String deviceAuthUrl = "https://login.microsoftonline.com/" + tenantId + "/oauth2/v2.0/devicecode";
 
@@ -271,7 +271,7 @@ void lightLeds(String payload)
         else if (userAvailability == "Away" || userAvailability == "BeRightBack")
         {
             ledcWrite(redChannel, 255);
-            ledcWrite(greenChannel, 255);
+            ledcWrite(greenChannel, 153);
             ledcWrite(blueChannel, 0);
         }
         else
