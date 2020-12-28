@@ -1,7 +1,7 @@
 # esp32-msgraph-presence
 Demonstrating how to read presence data with Microsoft Graph using ESP32
 
-The branch "GetPresenceFromMeEndpoint" can obtain only presence for the user that is currently logged in. 
+The branch ["GetPresenceFromMeEndpoint"](../../tree/GetPresenceFromMeEndpoint) can obtain only presence for the user that is currently logged in. 
 
 ## Configuration
 1. Register an application in Azure Active Directory with necessary permissions to access Presence endpoint on Microsoft Graph and read presence for current user (Presence.Read). More info https://docs.microsoft.com/en-us/graph/api/presence-get?view=graph-rest-1.0&tabs=http
