@@ -15,9 +15,11 @@ const int greenChannel = 1;
 const int blueChannel = 2;
 const int pwmResolution = 8;
 
-String scopes = "Presence.Read Presence.Read.All openid profile offline_access"; //Presence.Read Presence.Read.All openid profile offline_access
+// Removed Presence.Read.All to target only current user
+String scopes = "Presence.Read openid profile offline_access"; //Presence.Read Presence.Read.All openid profile offline_access
 
-String presenceUrl = "https://graph.microsoft.com/v1.0/users/" + userId + "/presence";
+String presenceUrl = "https://graph.microsoft.com/v1.0/me/presence"; // Get presence for current user
+// String presenceUrl = "https://graph.microsoft.com/v1.0/users/" + userId + "/presence"; // Get presence for specified user
 String tokenUrl = "https://login.microsoftonline.com/" + tenantId + "/oauth2/v2.0/token";
 String deviceAuthUrl = "https://login.microsoftonline.com/" + tenantId + "/oauth2/v2.0/devicecode";
 
